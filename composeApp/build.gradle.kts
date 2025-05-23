@@ -31,7 +31,11 @@ kotlin {
             isStatic = true
         }
     }
-    
+
+    room {
+        schemaDirectory("$projectDir/schemas")
+    }
+
     sourceSets {
         
         androidMain.dependencies {
